@@ -65,10 +65,23 @@
     -最終同個比例要產出三張經過"箱體濾波的"影像，以中間影像為主，某個PIXEL的像素值與26個PIXEL(其周圍8個PIXEL + 上下層各9個PIXEL )都大於則判定為關鍵點
     
 
-局部影像特徵描述
+局部影像特徵描述 : 組建關鍵點周圍的影像特徵
 
 1.Local invariant description : SIFT
 
+  -輸入一組關鍵點
+  
+  -針對每個關鍵點抓取其周圍16*16個影像區間
+  
+  -將16*16 畫分成 4*4 cells
+  
+  -針對每一個cell計算其梯度大小與梯度角度矩陣 ，並且替每個cell計算其定向梯度直方圖(需參考該像素離中心遠近判定貢獻直方圖計算的多寡)
+  
+  -統籌16個cells上的直方圖分布然後合併再一起(16*8(direct) dim)
+  
+  -對128陣列的值做L2標準化
+  
+  -因此一張影像上，會產出對應N個關鍵點的N組128維特徵向量
 
 2.Local invariant description : RootSIFT
 
@@ -78,7 +91,7 @@
 
 4.Local invariant description : Feature extraction and matching
 
-局部影像特徵描述
+局部影像特徵描述 : 組建關鍵點周圍的影像特徵
 
 1.Binary description : BRIEF
 
