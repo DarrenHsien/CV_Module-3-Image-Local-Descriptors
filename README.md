@@ -1,5 +1,6 @@
 # Module-3-Image-Local-Descriptors
 
+關鍵點探測
 
 1.Key Point : Fast
   
@@ -63,5 +64,30 @@
     
     -最終同個比例要產出三張經過"箱體濾波的"影像，以中間影像為主，某個PIXEL的像素值與26個PIXEL(其周圍8個PIXEL + 上下層各9個PIXEL )都大於則判定為關鍵點
     
-    
+
+局部影像特徵描述
+
+1.Local invariant description : SIFT
+
+
+2.Local invariant description : RootSIFT
+
+
+3.Local invariant description : SURF
+
+
+4.Local invariant description : Feature extraction and matching
+
+局部影像特徵描述
+
+1.Binary description : BRIEF
+
+2.ORB
+
+3.BRISK
+
+4.Binary description : Feature extraction and matching
+
+
+
   
