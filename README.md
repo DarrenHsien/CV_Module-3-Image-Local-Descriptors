@@ -128,6 +128,46 @@
 
 4.Local invariant description : Feature extraction and matching
 
+  -整合上述進行兩張影像之比對
+  
+  -關鍵點探測器
+  
+    -DOG
+    
+    -SIFT
+    
+    -FAST
+    
+    -FASTHESSIAN
+    
+    -SURF
+    
+    -HARRIS
+    
+    -ORB(Binary)
+    
+    -STAR(Binary)
+    
+  -關鍵點萃取局部特徵的特徵點描述器
+  
+    -SIFT
+    
+    -SURF
+    
+    -FastSIFT
+    
+  -比對器
+  
+    -BruteForce
+    
+    -BruteForce-SL2
+    
+    -BruteForce-L1
+    
+    -FlannBased
+  
+  三種工具整合計算進行影像比對
+
 局部影像特徵描述 : 組建關鍵點周圍的影像特徵
 
 1.Binary description : BRIEF
